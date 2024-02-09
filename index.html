@@ -116,8 +116,8 @@
 							srcset="
 							./assets/images/slider/banner_ryoji-iwata_375-min.webp 375w,
 							./assets/images/slider/banner_ryoji-iwata_768-min.webp 768w,
-							./assets/images/slider/banner_ryoji-iwata_1920-min.webp 1920w," 
-							sizes="(max-width: 600px) 375px, (min-width: 601px) 768px, calc(94.19vw + 17px)">
+							./assets/images/slider/banner_ryoji-iwata_1920-min.webp 1920w" 
+							sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)">
 					</div>
 					<div class="carousel-item">
 						<img src="./assets/images/slider/banner_concert_nicholas-green_1920-min.webp" class="d-block w-100" loading="lazy"
@@ -126,7 +126,7 @@
 							./assets/images/slider/banner_concert_nicholas-green_375-min.webp 375w,
 							./assets/images/slider/banner_concert_nicholas-green_768-min.webp 768w,
 							./assets/images/slider/banner_concert_nicholas-green_1440-min.webp 1440w,
-							./assets/images/slider/banner_concert_nicholas-green_1920-min.webp 1920w,"
+							./assets/images/slider/banner_concert_nicholas-green_1920-min.webp 1920w"
 							sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)">
 					</div>
 					<div class="carousel-item">
@@ -136,17 +136,15 @@
 							./assets/images/slider/banner_wedding_Edward-Cisneros_375-min.webp 375w,
 							./assets/images/slider/banner_wedding_Edward-Cisneros_768-min.webp 768w,
 							./assets/images/slider/banner_wedding_Edward-Cisneros_1440-min.webp 1440w,
-							./assets/images/slider/banner_wedding_Edward-Cisneros_1920-min.webp 1920w,"
+							./assets/images/slider/banner_wedding_Edward-Cisneros_1920-min.webp 1920w"
 							sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)">
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
@@ -154,19 +152,26 @@
 		</div>
 		<div id="about">
 			<div class="picture left">
-				<img src="./assets/images/about_nina-carducci.webp" alt="Photographe Nina Carducci">
+				<img src="./assets/images/about_nina-carducci-417.webp" loading="lazy" alt="Photographe Nina Carducci" 
+				srcset="
+				./assets/images/about_nina-carducci-128.webp 128w,
+				./assets/images/about_nina-carducci-256.webp 256w,
+				./assets/images/about_nina-carducci-417.webp 417w"
+				sizes="(max-width: 500px) 128px, (max-width: 1200px) 256px, 417px">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
-				<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
-					prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
-					immortels, voilà ce qui me fait vibrer.</h3>
-				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie :
-					le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos
-					yeux, ou le partager au plus grand nombre.
-					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon
-					approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du
-					bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+				<p class="about-me__introduction">
+					Devenir photographe était pour moi une évidence. 
+					Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, 
+					un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.
+				</p>
+				<p class="about-me_text">
+					Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour 
+					le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels,
+					afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.
+				</p>
 			</div>
 		</div>
 		<div id="gallery">
@@ -175,48 +180,65 @@
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
 						alt="Concert gallery and photographs of an Aaron Paul concert"
-						src="./assets/images/gallery/concerts/concerts_aaron-paul-min.webp" />
+						src="./assets/images/gallery/concerts/concerts_aaron-paul-min.webp" 
+						srcset="./assets/images/gallery/concerts/concerts_aaron-paul_448-min.webp 448w"
+						sizes="calc(100vw - 16px)" />
 
 					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						alt="Gallery entreprise et photographie pour Ali Morshedlou"
-						src="./assets/images/gallery/entreprise/company_ali-morshedlou-min.webp" />
+						src="./assets/images/gallery/entreprise/company_ali-morshedlou-min.webp" 
+						srcset="./assets/images/gallery/entreprise/company_ali-morshedlou_448-min.webp 448w"
+						sizes="calc(100vw - 16px)" />
 
 					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						alt="Gallery company and photographing employees during a meeting"
-						src="./assets/images/gallery/entreprise/company_jason-goodman-min.webp" />
+						src="./assets/images/gallery/entreprise/company_jason-goodman-min.webp" 
+						srcset="./assets/images/gallery/entreprise/company_jason-goodman_254-min.webp 254w"
+						sizes="calc(100vw - 16px)" />
 
 					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy"
 						alt="Wedding gallery and photograph of the hands of the bride and groom"
-						src="./assets/images/gallery/mariage/wedding_hannah-busing-min.webp" />
+						src="./assets/images/gallery/mariage/wedding_hannah-busing-min.webp" 
+						srcset="./assets/images/gallery/mariage/wedding_hannah-busing_304-min.webp 304w"
+						sizes="calc(100vw - 16px)" />
 
 					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy"
 						alt="Ade Tunji's portrait and photograph gallery"
-						src="./assets/images/gallery/portraits/portrait_ade-tunji-min.webp" />
+						src="./assets/images/gallery/portraits/portrait_ade-tunji-min.webp" 
+						sizes="calc(100vw - 16px)" />
 
 					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy"
 						alt="Wedding gallery and photograph of the bride and groom in front of a palm tree"
-						src="./assets/images/gallery/mariage/wedding_jakob-owens-min.webp" />
+						src="./assets/images/gallery/mariage/wedding_jakob-owens-min.webp"
+						srcset="./assets/images/gallery/mariage/wedding_jakob-owens_448-min.webp 448w"
+						sizes="calc(100vw - 16px)" />
 
 					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy"
 						alt="Portrait gallery and photograph of Nino Van Prattenburg in front of a fence"
-						src="./assets/images/gallery/portraits/portrait_nino-van-prattenburg-min.webp" />
+						src="./assets/images/gallery/portraits/portrait_nino-van-prattenburg-min.webp" 
+						srcset="./assets/images/gallery/portraits/portrait_nino-van-prattenburg_448-min.webp"
+						sizes="calc(100vw - 16px)" />
 
 					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
 						alt="Concert gallery and photos of the Austin Neill concert under the lights"
-						src="./assets/images/gallery/concerts/concerts_austin-neill-min.webp" />
+						src="./assets/images/gallery/concerts/concerts_austin-neill-min.webp" 
+						srcset="./assets/images/gallery/concerts/concerts_austin-neill_254-min.webp 254w"
+						sizes="calc(100vw - 16px)" />
 
 					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						alt="Company gallery and photograph of a Mateus Campos Felipe employee"
-						src="./assets/images/gallery/entreprise/company_mateus-campos-felipe-min.webp" />
+						src="./assets/images/gallery/entreprise/company_mateus-campos-felipe-min.webp"
+						srcset="./assets/images/gallery/entreprise/company_mateus-campos-felipe_608-min.webp 608w"
+						sizes="calc(100vw - 16px)" />
 				</div>
 			</div>
 			<div class="quote">
 				<figure>
 					<blockquote>
-						<h3 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
+						<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
 							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
 							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
-							vérité.</h3>
+							vérité.</p>
 					</blockquote>
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
@@ -264,8 +286,8 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<h3 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
-						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h3>
+					<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
+						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
