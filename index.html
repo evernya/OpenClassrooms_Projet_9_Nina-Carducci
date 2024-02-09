@@ -27,19 +27,19 @@
 	<meta name="twitter:image" content="https://ninacarducci.github.io/assets/images/nina.png">
 	
 	<!-- CDN Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet preload" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" as="style">
 
 	<!-- CDN Bootstrap JS BUNDLE -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="./assets/style.min.css">
+	<link rel="stylesheet preload" href="./assets/style.min.css" as="style">
 
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+	<link href="https://fonts.gstatic.com" crossorigin as="style">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" >
+	<link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
 
 	<!-- Rich Snippets -->
 	<script type="application/ld+json">
@@ -111,40 +111,33 @@
 
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/banner_ryoji-iwata_1920-min.webp" class="d-block w-100" 
+						<img src="./assets/images/slider/banner_ryoji-iwata_1920-min.webp" class="d-block h-100 w-100"
 							alt="Banner and photograph of a man walking on a pedestrian crossing" 
 							srcset="
 							./assets/images/slider/banner_ryoji-iwata_375-min.webp 375w,
-							./assets/images/slider/banner_ryoji-iwata_425-min.webp 425w,
 							./assets/images/slider/banner_ryoji-iwata_768-min.webp 768w,
-							./assets/images/slider/banner_ryoji-iwata_1024-min.webp 1024w,
-							./assets/images/slider/banner_ryoji-iwata_1440-min.webp 1440w,
 							./assets/images/slider/banner_ryoji-iwata_1920-min.webp 1920w," 
-							sizes="100vw">
+							sizes="(max-width: 600px) 375px, (min-width: 601px) 768px, calc(94.19vw + 17px)">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/banner_concert_nicholas-green_1920-min.webp" class="d-block w-100"
+						<img src="./assets/images/slider/banner_concert_nicholas-green_1920-min.webp" class="d-block w-100" loading="lazy"
 							alt="Banner and photograph of a concert with a crowd" 
 							srcset="
 							./assets/images/slider/banner_concert_nicholas-green_375-min.webp 375w,
-							./assets/images/slider/banner_concert_nicholas-green_425-min.webp 425w,
 							./assets/images/slider/banner_concert_nicholas-green_768-min.webp 768w,
-							./assets/images/slider/banner_concert_nicholas-green_1024-min.webp 1024w,
 							./assets/images/slider/banner_concert_nicholas-green_1440-min.webp 1440w,
 							./assets/images/slider/banner_concert_nicholas-green_1920-min.webp 1920w,"
-							sizes="100vw">
+							sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/banner_wedding_Edward-Cisneros_1920-min.webp" class="d-block w-100"
+						<img src="./assets/images/slider/banner_wedding_Edward-Cisneros_1920-min.webp" class="d-block w-100" loading="lazy"
 							alt="Banner and photograph of a wedding opening with congratulations from the guests"
 							srcset="
 							./assets/images/slider/banner_wedding_Edward-Cisneros_375-min.webp 375w,
-							./assets/images/slider/banner_wedding_Edward-Cisneros_425-min.webp 425w,
 							./assets/images/slider/banner_wedding_Edward-Cisneros_768-min.webp 768w,
-							./assets/images/slider/banner_wedding_Edward-Cisneros_1024-min.webp 1024w,
 							./assets/images/slider/banner_wedding_Edward-Cisneros_1440-min.webp 1440w,
 							./assets/images/slider/banner_wedding_Edward-Cisneros_1920-min.webp 1920w,"
-							sizes="100vw">
+							sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -183,27 +176,35 @@
 					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
 						alt="Concert gallery and photographs of an Aaron Paul concert"
 						src="./assets/images/gallery/concerts/concerts_aaron-paul-min.webp" />
+
 					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						alt="Gallery entreprise et photographie pour Ali Morshedlou"
 						src="./assets/images/gallery/entreprise/company_ali-morshedlou-min.webp" />
+
 					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						alt="Gallery company and photographing employees during a meeting"
 						src="./assets/images/gallery/entreprise/company_jason-goodman-min.webp" />
+
 					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy"
 						alt="Wedding gallery and photograph of the hands of the bride and groom"
 						src="./assets/images/gallery/mariage/wedding_hannah-busing-min.webp" />
+
 					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy"
 						alt="Ade Tunji's portrait and photograph gallery"
 						src="./assets/images/gallery/portraits/portrait_ade-tunji-min.webp" />
+
 					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy"
 						alt="Wedding gallery and photograph of the bride and groom in front of a palm tree"
 						src="./assets/images/gallery/mariage/wedding_jakob-owens-min.webp" />
+
 					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy"
 						alt="Portrait gallery and photograph of Nino Van Prattenburg in front of a fence"
 						src="./assets/images/gallery/portraits/portrait_nino-van-prattenburg-min.webp" />
+
 					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
 						alt="Concert gallery and photos of the Austin Neill concert under the lights"
 						src="./assets/images/gallery/concerts/concerts_austin-neill-min.webp" />
+
 					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						alt="Company gallery and photograph of a Mateus Campos Felipe employee"
 						src="./assets/images/gallery/entreprise/company_mateus-campos-felipe-min.webp" />
@@ -287,18 +288,18 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/contact_camera.webp" alt="Photograph of a camera">
+				<img src="./assets/images/contact_camera.webp" loading="lazy" alt="Photograph of a camera">
 			</div>
 		</div>
 	</footer>
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 
 	<!-- Scripts -->
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 </body>
 
 </html>
